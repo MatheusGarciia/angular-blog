@@ -10,6 +10,15 @@
   align-items: center;
 }
 
+.button__back {
+  font-size: 22px;
+  border: 3px solid gray;
+  border-radius: 2px;
+  left: 7vh;
+  position: absolute;
+  padding: 2px 7px;
+}
+
 .content__cover > img {
   border: 5px solid rgb(110, 108, 108);
   border-radius: 5px;
@@ -19,10 +28,25 @@
 }
 
 .content__description {
+  width: 80%;
   margin-top: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .content__description > p {
   margin-top: 20px;
   color: rgb(197, 197, 197);
+  font-size: 22px;
+}
+
+.content__link {
+  margin-top: 20px;
+}
+.content__link > a {
+  color: rgb(197, 197, 197);
+  font-size: 22px;
+  text-decoration: underline;
 }

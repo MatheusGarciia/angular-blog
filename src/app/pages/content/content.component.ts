@@ -10,8 +10,12 @@ import { dataFake } from '../../data/dataFake';
 export class ContentComponent implements OnInit {
   photoCover: string = '';
   contentTitle: string = '';
-  contentDescription: string = '';
+  contentDescription1: string = '';
+  contentDescription2: string = '';
+  contentDescription3: string = '';
   private id: string | null = '0';
+  githubBoolean: boolean = false;
+  github__link: string = '';
 
   constructor(private route: ActivatedRoute) {}
 
@@ -25,7 +29,11 @@ export class ContentComponent implements OnInit {
     const result = dataFake.filter((article) => article.id == id)[0];
 
     this.contentTitle = result.title;
-    this.contentDescription = result.description;
+    this.contentDescription1 = result.description1;
+    this.contentDescription2 = result.description2;
+    this.contentDescription3 = result.description3;
     this.photoCover = result.photoCover;
+    this.githubBoolean = result.githubBoolean;
+    this.github__link = result.github;
   }
 }
