@@ -1,0 +1,30 @@
+@media screen and (max-width: 450px) {
+  .container__content {
+    width: 100%;
+    height: 1300px;
+  }
+
+  .content__cover > img {
+    width: 400px;
+    min-width: 400px;
+    height: 250px;
+  }
+
+  .content__description {
+    width: 90%;
+  }
+
+  .content__description > p {
+    height: 100%;
+  }
+
+  .content__link {
+    width: 275px;
+  }
+
+  .button__back {
+    left: -130px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+}

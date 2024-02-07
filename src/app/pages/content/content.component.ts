@@ -5,14 +5,12 @@ import { dataFake } from '../../data/dataFake';
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
-  styleUrls: ['./content.component.css'],
+  styleUrls: ['./content.component.css', './content.responsive.component.css'],
 })
 export class ContentComponent implements OnInit {
   photoCover: string = '';
   contentTitle: string = '';
-  contentDescription1: string = '';
-  contentDescription2: string = '';
-  contentDescription3: string = '';
+  contentDescription: string = '';
   private id: string | null = '0';
   githubBoolean: boolean = false;
   github__link: string = '';
@@ -29,9 +27,7 @@ export class ContentComponent implements OnInit {
     const result = dataFake.filter((article) => article.id == id)[0];
 
     this.contentTitle = result.title;
-    this.contentDescription1 = result.description1;
-    this.contentDescription2 = result.description2;
-    this.contentDescription3 = result.description3;
+    this.contentDescription = result.description;
     this.photoCover = result.photoCover;
     this.githubBoolean = result.githubBoolean;
     this.github__link = result.github;
